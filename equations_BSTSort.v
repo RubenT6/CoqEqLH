@@ -250,23 +250,5 @@ Equations? NIncList (l h : nat) : list nat by wf ((S h) - l) :=
     NIncList l h (true) => [] ;
     NIncList l h (false) => l :: (NIncList (S l) h).
 Proof.
-red. destruct l. rewrite Nat.sub_0_r. easy.
-
-destruct (NIncList (S l) h).
-destruct h.
-destruct l.
-Search minus. rewrite Nat.sub_0_l. Search lt. apply Nat.lt_0_succ.
-
-
-change (match l with
-        | 0 => S h
-        | S l0 => h - l0
-        end) with (S h - l).
-Search minus.
-
-destruct l.
-- Search minus. rewrite Nat.sub_0_r. Search lt. apply Nat.lt_succ_diag_r.
-- 
-destruct (NIncList h (S l)).
-Search minus.
+Abort.
 
