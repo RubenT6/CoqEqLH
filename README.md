@@ -12,6 +12,9 @@ Contains definition of Tree and BST invariant as well as sorting algorithm based
 Also include proof of sorting property.
 ### `equations_app_sigma_vs_nosigma.v`
 Interesting example of issues encountered due to use of dependent type `vector`.
+### `equations_withwheredec.v`
+Examples of Equations definitions using `with` and `where` clauses.
+Use of `dec` produces more information in proof context.
 ### `liquid_quicksort.hs`, `liquid_mergesort.hs` and `liquidBST.hs`
 Similar to their `equations counterparts above. Currently none contain proofs of permutation property.
 ### `liquid_natpos.hs`
