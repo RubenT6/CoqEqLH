@@ -16,6 +16,6 @@ Interesting example of issues encountered due to use of dependent type `vector`.
 Examples of Equations definitions using `with` and `where` clauses.
 Use of `dec` produces more information in proof context.
 ### `liquid_quicksort.hs`, `liquid_mergesort.hs` and `liquidBST.hs`
-Similar to their `equations counterparts above. Currently none contain proofs of permutation property.
+Similar to their `equations` counterparts above. Currently none contain proofs of permutation property.
 ### `liquid_natpos.hs`
 Very simple example used to explain part of the verification method employed by LH.
